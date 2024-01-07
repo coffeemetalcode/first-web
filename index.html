@@ -3,6 +3,14 @@
   <head>
     <title>This is the title of the webpage!</title>
   </head>
+  <style>
+    .boxed-text {
+      color: green;
+      border-style: dashed;
+      border-width: 5px;
+      border-color: yellow
+    }
+  </style>
   <body>
     <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
     <h1>This is a Heading 1</h1>
@@ -26,5 +34,23 @@
     <a href="./child-page.html">
       <h1>Link to another page</h1>
     </a>
+
+    <div style="color: red; font-family: Arial, Helvetica, sans-serif; border-style: solid; border-width: 2.5px; border-color: blue">
+      <p>Inline styles</p>
+    </div>
+    
+    <br/>
+
+    <div class="boxed-text">
+      <p>Style from "style" tag</p>
+    </div>
+
+    <br/>
+
+    <div class="boxed-text" style="color: red; font-family: Arial, Helvetica, sans-serif; border-style: solid; border-width: 2.5px; border-color: blue">
+      <p>Closest style wins</p>
+    </div>
+
+    <br/>
   </body>
 </html>
